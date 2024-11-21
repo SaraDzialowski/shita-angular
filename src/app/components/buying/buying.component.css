@@ -1,0 +1,86 @@
+.doors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .doors {
+    flex-wrap: nowrap;
+    margin-left: 600px;
+    width: 100%;
+  }
+}
+
+.date {
+  font-size: 30px;
+  color: white;
+  float: right;
+  text-align: center;
+  margin-right: 20px;
+  white-space: pre-line;
+  margin-top: 20px;
+}
+
+.hello {
+  font-size: 40px;
+  color: white;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.header {
+  overflow: auto;
+  text-align: center;
+}
+
+.card {
+  width: 700px;
+  height: auto;
+  align-items: center;
+  margin-right: 50%;
+  overflow-y: auto; /* Add vertical scroll */
+  max-height: 500px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  direction: rtl;
+}
+
+.product-item {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 120px;
+}
+
+.product-image {
+  width: 100px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 100%;
+}

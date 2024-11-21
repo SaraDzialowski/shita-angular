@@ -1,0 +1,95 @@
+::ng-deep .p-dialog .p-dialog-header-close {
+    display: none;
+}
+
+.pi.pi-times {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black; /* Keep the original color of the icon */
+    cursor: pointer;
+}
+.dialog{
+    width: 300px;
+    direction: rtl;
+}
+
+
+.custom-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(170, 163, 163);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px; 
+}
+.custom-input:focus-within{
+    background-color: rgb(224, 234, 249);
+    border-bottom: 1px solid #4C9FFF
+
+}
+
+.custom-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 18px;
+
+}
+
+.custom-input .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.black-bg {
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    direction: rtl;
+}
+
+select {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+select option {
+    padding: 5px;
+}
+
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+}
+::ng-deep .p-dialog .p-dialog-footer  {
+    justify-content: flex-start;
+}
+
+::ng-deep .p-dialog .p-dialog-footer .p-button {
+    position: relative;
+    left :-180px;
+    direction: ltr;
+    /* background-color: rgb(0, 145, 65);
+    border-color:  rgb(1, 106, 59); */
+}
+
+

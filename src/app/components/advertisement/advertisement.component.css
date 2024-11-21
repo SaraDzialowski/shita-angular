@@ -1,0 +1,50 @@
+.title{
+  text-align: center;
+  color: white;
+}
+.advertisement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 200px;
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+  }
+  
+  .advertisement-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: scaleFadeImage 1s ease-in-out;
+  }
+  
+  .advertisement-container p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  @keyframes scaleFadeImage {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .img {
+    width: 400px;
+    height: 100%;
+  }

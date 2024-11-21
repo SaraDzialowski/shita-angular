@@ -1,0 +1,38 @@
+<div class="dialog">
+    <p-dialog [visible]="visible" [style]="{width: '450px'}" header="כניסה" [modal]="true" styleClass="p-field">
+        <ng-template pTemplate="content">
+            <i class="pi pi-times" (click)="visibility(false)"></i>
+            <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+                <div class="custom-input">
+                    <span class="icon black-bg">
+                        <i class="pi pi-at"></i>
+                    </span>
+                    <input  type="email" placeholder="דואר אלקטרוני" required formControlName = "email"/>
+                </div>
+                @if (form['email'].invalid && (form['email'].dirty || form['password'].touched)) {
+                    <div class="error-message">
+                        המייל אינו תקין
+                    </div>
+                }
+                <br>
+            <div class="custom-input">
+                <span class="icon black-bg" (click)="togglePasswordVisibility()">
+                    <i [ngClass]="showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'"></i>
+                </span>
+                <input type="{{showPassword ? 'text' : 'password'}}" placeholder="סיסמא" formControlName="password" required>
+            </div>
+            @if (form['password'].invalid && (form['password'].dirty || form['password'].touched)) {
+                <div class="error-message">
+                    הסיסמא חייבת להכיל לפחות 8 תווים עם אות אחת
+                </div>
+                }  
+            <br> 
+            </form>
+        </ng-template>
+        
+        <ng-template  pTemplate="footer">
+            <p-button label="כניסה" icon="pi pi-check" (click)="visibility(false,true)" severity="success" />
+            <p-button label="ביטול" icon="pi pi-times" (click)="visibility(false)" severity="success" />
+        </ng-template>
+    </p-dialog>
+</div>

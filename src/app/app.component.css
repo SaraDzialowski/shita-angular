@@ -1,0 +1,30 @@
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height considering footer */
+    background-color: #f0f0f0; /* Light background */
+    height: 800px;
+    
+  }
+  
+  pdf-viewer {
+    width: 80%; /* Adjust as needed */
+    height: 80%; /* Adjust as needed */
+  }
+  
+  .logo {
+    width: 400px; /* Adjust width as needed */
+    height: auto;
+    position: fixed;
+    top: 1400px;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      width: 200px; /* Adjust width for mobile devices */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+}

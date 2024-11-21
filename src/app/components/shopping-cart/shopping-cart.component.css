@@ -1,0 +1,107 @@
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 2px;
+}
+
+.img {
+  width: 100px;
+}
+
+.product-item {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 2px;
+  border-bottom: 1px solid #ccc;
+  direction: rtl;
+  font-size: 23px;
+}
+
+.products {
+  width: 900px;
+  height: 780px;
+  overflow-y: auto;
+  margin-left: 88px;
+  scroll-behavior: smooth;
+}
+
+.products::-webkit-scrollbar {
+  width: 10px;
+  margin-right: -5px;
+  margin-bottom: 0px;
+}
+
+.products::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 2px;
+}
+
+.products::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.products::-webkit-scrollbar-button {
+  display: none;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  direction: rtl;
+  text-align: center;
+  width: 900px;
+  margin-left: 88px;
+  font-size: 20px;
+}
+
+
+.empty-products {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.p-toast-custom {
+  direction: rtl;
+}
+
+:host ::ng-deep .p-toast-message-info {
+  background-color: #ffffff !important;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+:host ::ng-deep .p-button {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+::ng-deep .p-button.p-button-text-only {
+  background-color: black;
+  color: white;
+}
+
+::ng-deep .p-button .pi-trash {
+  color: white;
+}
+
+.fa-barcode {
+  width: 200px;
+  font-size: 200px;
+  position: fixed;
+  top: 400px;
+  right: 1200px;
+}
+.payment{
+  direction: ltr;
+}

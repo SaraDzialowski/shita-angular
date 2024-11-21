@@ -1,0 +1,14 @@
+<div >
+    <div class='header'>
+        <p class='date'>{{formattedDate}}</p>         
+        <p class='hello'>שלום {{user}}</p>
+    </div><br>
+    <div class="doors">
+       @for (door of doorsValues; track $index) {
+        <app-door [door] = "door" ></app-door>            
+       }
+    </div> 
+    <br><br>
+    <app-shopping-cart  [cartId] = "cartId" [product]="product" [isBuyingComponent] = "true"></app-shopping-cart> 
+</div>
+
